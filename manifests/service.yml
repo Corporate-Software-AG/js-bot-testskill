@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: "heroescluster-7809"
+    labels:
+        app: "heroescluster-7809"
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 39783
+      targetPort: 39783
+      protocol: TCP
+      name: http
+    selector:
+        app: "heroescluster-7809"
