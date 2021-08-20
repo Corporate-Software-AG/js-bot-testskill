@@ -5,9 +5,8 @@ metadata:
     labels:
         app: "testskill"
 spec:
-    type: LoadBalancer
     ports:
-    - port: 80
+    - port: 39783
       targetPort: 39783
       protocol: TCP
       name: http
