@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: "heroescluster-7809"
+  name: "testskill"
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: "heroescluster-7809"
+      app: "testskill"
   template:
     metadata:
       labels:
-        app: "heroescluster-7809"
+        app: "testskill"
     spec:
       containers:
-        - name: "heroescluster-7809"
+        - name: "testskill"
           image: "heroes.azurecr.io/heroescluster"
           ports:
           - containerPort: 39783
