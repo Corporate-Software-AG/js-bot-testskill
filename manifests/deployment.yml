@@ -16,4 +16,4 @@ spec:
         - name: "testskill"
           image: "heroes.azurecr.io/heroescluster"
           ports:
-          - containerPort: 39783
+          - containerPort: 3978

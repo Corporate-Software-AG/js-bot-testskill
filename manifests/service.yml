@@ -6,8 +6,8 @@ metadata:
         app: "testskill"
 spec:
     ports:
-    - port: 39783
-      targetPort: 39783
+    - port: 3978
+      targetPort: 3978
       protocol: TCP
       name: http
     selector:
